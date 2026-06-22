@@ -16,77 +16,34 @@
     min-height: 100vh;
   }
 
-  .page-header {
-    background: #fff;
-    border-bottom: 1px solid #e5e3db;
-    padding: 2rem 0;
-  }
-  .page-header-inner {
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-  .eyebrow {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #888780;
-    margin-bottom: 0.4rem;
-  }
-  .page-header h1 {
-    font-size: 26px;
-    font-weight: 500;
-    color: #1a1a18;
-    margin-bottom: 0.3rem;
-  }
-  .page-header p {
-    font-size: 14px;
-    color: #5f5e5a;
-  }
+  .page-header { background: #fff; border-bottom: 1px solid #e5e3db; padding: 2rem 0; }
+  .page-header-inner { max-width: 820px; margin: 0 auto; padding: 0 1.5rem; }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #888780; margin-bottom: 0.4rem; }
+  .page-header h1 { font-size: 26px; font-weight: 500; color: #1a1a18; margin-bottom: 0.3rem; }
+  .page-header p { font-size: 14px; color: #5f5e5a; }
 
-  .container {
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 4rem;
-  }
+  .framing-box { max-width: 820px; margin: 1.25rem auto 0; padding: 0 1.5rem; }
+  .framing-inner { background: #EEEDFE; border-radius: 10px; padding: 0.85rem 1.1rem; font-size: 13px; color: #26215C; line-height: 1.65; }
+  .framing-inner strong { font-weight: 500; }
 
-  .nav {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-  .nav button {
-    font-size: 13px;
-    padding: 7px 16px;
-    border-radius: 8px;
-    border: 1px solid #d3d1c7;
-    background: #fff;
-    color: #5f5e5a;
-    cursor: pointer;
-    transition: background 0.12s, color 0.12s, border-color 0.12s;
-    font-family: inherit;
-  }
-  .nav button.active {
-    background: #1a1a18;
-    color: #fff;
-    border-color: #1a1a18;
-    font-weight: 500;
-  }
-  .nav button:hover:not(.active) {
-    background: #f1efe8;
-    border-color: #b4b2a9;
-  }
+  .legend { max-width: 820px; margin: 0.85rem auto 0; padding: 0 1.5rem 1.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #5f5e5a; }
+  .legend-badge { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 20px; }
+  .badge-you { background: #EEEDFE; color: #3C3489; }
+  .badge-ea  { background: #f1efe8; color: #444441; border: 1px solid #d3d1c7; }
+  .badge-em  { background: #E1F5EE; color: #085041; }
+
+  .container { max-width: 820px; margin: 0 auto; padding: 1.5rem 1.5rem 4rem; }
+
+  .nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 2rem; }
+  .nav button { font-size: 13px; padding: 7px 16px; border-radius: 8px; border: 1px solid #d3d1c7; background: #fff; color: #5f5e5a; cursor: pointer; transition: background 0.12s, color 0.12s; font-family: inherit; }
+  .nav button.active { background: #1a1a18; color: #fff; border-color: #1a1a18; font-weight: 500; }
+  .nav button:hover:not(.active) { background: #f1efe8; border-color: #b4b2a9; }
 
   .chapter { display: none; }
   .chapter.active { display: block; }
 
-  .ch-header {
-    border-left: 3px solid;
-    padding: 0.15rem 0 0.15rem 1rem;
-    margin-bottom: 1.75rem;
-  }
+  .ch-header { border-left: 3px solid; padding: 0.15rem 0 0.15rem 1rem; margin-bottom: 1.75rem; }
   .ch-header h2 { font-size: 20px; font-weight: 500; color: #1a1a18; margin-bottom: 2px; }
   .ch-header p { font-size: 13px; color: #888780; }
   .ch2 .ch-header { border-color: #534AB7; }
@@ -94,72 +51,21 @@
   .ch4 .ch-header { border-color: #185FA5; }
   .ch5 .ch-header { border-color: #993C1D; }
 
-  .section-label {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #888780;
-    margin: 1.75rem 0 0.7rem;
-  }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888780; margin: 1.75rem 0 0.7rem; }
 
-  .summary-box {
-    background: #fff;
-    border: 1px solid #e5e3db;
-    border-radius: 12px;
-    padding: 1.1rem 1.25rem;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #2c2c2a;
-  }
+  .summary-box { background: #fff; border: 1px solid #e5e3db; border-radius: 12px; padding: 1.1rem 1.25rem; font-size: 14px; line-height: 1.8; color: #2c2c2a; }
 
-  .concept-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 8px;
-  }
-  .concept-pill {
-    background: #fff;
-    border: 1px solid #e5e3db;
-    border-radius: 8px;
-    padding: 10px 14px;
-  }
+  .concept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px; }
+  .concept-pill { background: #fff; border: 1px solid #e5e3db; border-radius: 8px; padding: 10px 14px; }
   .concept-pill strong { display: block; font-weight: 500; color: #1a1a18; font-size: 13px; margin-bottom: 3px; }
   .concept-pill span { color: #5f5e5a; font-size: 12px; line-height: 1.55; }
 
-  .phase-label {
-    font-size: 12px;
-    font-weight: 500;
-    color: #888780;
-    margin: 1.25rem 0 0.5rem;
-    padding-left: 2px;
-  }
+  .phase-label { font-size: 12px; font-weight: 500; color: #888780; margin: 1.25rem 0 0.5rem; padding-left: 2px; }
 
   .steps { display: flex; flex-direction: column; gap: 8px; }
-  .step {
-    background: #fff;
-    border: 1px solid #e5e3db;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .step-top {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    padding: 10px 14px;
-  }
-  .step-num {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: 500;
-    margin-top: 1px;
-  }
+  .step { background: #fff; border: 1px solid #e5e3db; border-radius: 8px; overflow: hidden; }
+  .step-top { display: flex; gap: 12px; align-items: flex-start; padding: 10px 14px; }
+  .step-num { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; margin-top: 1px; }
   .ch2 .step-num { background: #EEEDFE; color: #3C3489; }
   .ch3 .step-num { background: #E1F5EE; color: #085041; }
   .ch4 .step-num { background: #E6F1FB; color: #0C447C; }
@@ -168,97 +74,30 @@
   .step-body strong { font-size: 13px; font-weight: 500; color: #1a1a18; display: block; margin-bottom: 3px; }
   .step-body p { font-size: 13px; color: #5f5e5a; line-height: 1.65; }
 
-  /* Sample / script blocks */
+  .who-badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 1px 7px; border-radius: 20px; margin-left: 6px; vertical-align: middle; position: relative; top: -1px; }
+
   details.sample { border-top: 1px solid #e5e3db; }
-  details.sample summary {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #888780;
-    padding: 7px 14px;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    user-select: none;
-  }
+  details.sample summary { font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #888780; padding: 7px 14px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px; user-select: none; }
   details.sample summary::-webkit-details-marker { display: none; }
-  details.sample summary::before {
-    content: '▶';
-    font-size: 8px;
-    transition: transform 0.15s;
-  }
+  details.sample summary::before { content: '▶'; font-size: 8px; transition: transform 0.15s; }
   details.sample[open] summary::before { transform: rotate(90deg); }
   details.sample summary:hover { color: #444441; }
 
-  .sample-body {
-    padding: 0 14px 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .sample-label {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #b4b2a9;
-    margin-bottom: 4px;
-  }
-  .script-block {
-    background: #f5f4f0;
-    border-radius: 6px;
-    padding: 10px 14px;
-    font-size: 12.5px;
-    line-height: 1.7;
-    color: #2c2c2a;
-    white-space: pre-wrap;
-    font-family: inherit;
-    border-left: 3px solid;
-  }
+  .sample-body { padding: 0 14px 14px; display: flex; flex-direction: column; gap: 10px; }
+  .sample-label { font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #b4b2a9; margin-bottom: 4px; }
+
+  .script-block { background: #f5f4f0; border-radius: 6px; padding: 10px 14px; font-size: 12.5px; line-height: 1.7; color: #2c2c2a; white-space: pre-wrap; font-family: inherit; border-left: 3px solid; }
   .ch2 .script-block { border-color: #AFA9EC; }
   .ch3 .script-block { border-color: #5DCAA5; }
   .ch4 .script-block { border-color: #85B7EB; }
   .ch5 .script-block { border-color: #F0997B; }
 
-  .email-block {
-    background: #fff;
-    border: 1px solid #e5e3db;
-    border-radius: 6px;
-    overflow: hidden;
-    font-size: 12.5px;
-  }
-  .email-subject {
-    background: #f5f4f0;
-    border-bottom: 1px solid #e5e3db;
-    padding: 7px 12px;
-    font-weight: 500;
-    font-size: 12px;
-    color: #444441;
-  }
-  .email-body {
-    padding: 10px 12px;
-    line-height: 1.7;
-    color: #2c2c2a;
-    white-space: pre-wrap;
-    font-family: inherit;
-  }
-  .email-meta {
-    font-size: 11px;
-    color: #888780;
-    padding: 0 12px 8px;
-  }
+  .email-block { background: #fff; border: 1px solid #e5e3db; border-radius: 6px; overflow: hidden; font-size: 12.5px; }
+  .email-subject { background: #f5f4f0; border-bottom: 1px solid #e5e3db; padding: 7px 12px; font-weight: 500; font-size: 12px; color: #444441; }
+  .email-body { padding: 10px 12px; line-height: 1.7; color: #2c2c2a; white-space: pre-wrap; font-family: inherit; }
+  .email-meta { font-size: 11px; color: #888780; padding: 0 12px 8px; font-style: italic; }
 
-  .tip-block {
-    background: #faeeda;
-    border-radius: 6px;
-    padding: 9px 12px;
-    font-size: 12px;
-    color: #633806;
-    line-height: 1.6;
-  }
+  .tip-block { background: #faeeda; border-radius: 6px; padding: 9px 12px; font-size: 12px; color: #633806; line-height: 1.6; }
 
   @media (max-width: 600px) {
     .page-header h1 { font-size: 20px; }
@@ -273,9 +112,21 @@
   <div class="page-header-inner">
     <p class="eyebrow">Book Notes</p>
     <h1>Radical Delegation</h1>
-    <p>Hired an Assistant and Still Struggling? How to Go from Grind to Great — Chapter summaries, core concepts &amp; EA action plans with sample scripts</p>
+    <p>Hired an Assistant and Still Struggling? — Turning your EA into a Rockstar Engagement Manager</p>
   </div>
 </header>
+
+<div class="framing-box">
+  <div class="framing-inner">
+    <strong>Key distinction from the book:</strong> In Radical Delegation, <strong>EM = Engagement Manager</strong> — the elevated role your EA grows into. It's a hybrid between a highly skilled executive assistant and a chief of staff. The goal of every chapter is to show <strong>you</strong> (the executive) how to transform your EA into a true EM. Your EA doesn't stay an EA — they become your most powerful strategic asset.
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="legend-badge badge-you">You</span> The executive / Engineering Manager</div>
+  <div class="legend-item"><span class="legend-badge badge-ea">EA</span> Executive Assistant — where they start</div>
+  <div class="legend-item"><span class="legend-badge badge-em">EM</span> Engagement Manager — what they become</div>
+</div>
 
 <main class="container">
 
@@ -286,332 +137,208 @@
     <button onclick="showChapter('ch5', this)">Ch 5 — Inbox Shadowing</button>
   </nav>
 
-  <!-- ═══════════════════ CHAPTER 2 ═══════════════════ -->
+  <!-- CH 2 -->
   <section id="ch2" class="chapter ch2 active">
-    <div class="ch-header">
-      <h2>Leverage and Engagement Managers</h2>
-      <p>Chapter 2 — The force multiplier mindset</p>
-    </div>
+    <div class="ch-header"><h2>Leverage and Engagement Managers</h2><p>Chapter 2 — What an EA becomes, and why it matters</p></div>
     <p class="section-label">Summary</p>
-    <div class="summary-box">
-      Working with an EA is not about saving 2–3 hours a day — it's about becoming a "legendary leader." An EM uses their EA to eliminate cognitive load across all areas: inbox, scheduling, team management, and relationship-building. The EA becomes a force multiplier, letting the EM operate at their highest-leverage activities only. The goal isn't productivity — it's transformation. The EM becomes someone others trust, believe in, follow, and support.
-    </div>
+    <div class="summary-box">Most people treat an EA as a time-saver — offloading small stuff. That's thinking too small. The book's argument is that your EA should become an <strong>Engagement Manager (EM)</strong>: a hybrid between a highly skilled executive assistant and an executive chief of staff. An EM doesn't just save you time — they transform how you lead. They own your inbox, manage your relationships, prepare you for every meeting, and free you to spend time only on what moves the company. The goal: make you the legendary leader your company deserves — someone others trust, believe in, follow, and support.</div>
 
     <p class="section-label">Core concepts</p>
     <div class="concept-grid">
-      <div class="concept-pill"><strong>Massive Leverage</strong><span>EA's value is transformation of how you lead, not just efficiency</span></div>
-      <div class="concept-pill"><strong>Cognitive Load Reduction</strong><span>Remove low-value responsibilities from your mental bandwidth</span></div>
-      <div class="concept-pill"><strong>Legendary Leader Frame</strong><span>Someone others trust, follow, and support</span></div>
-      <div class="concept-pill"><strong>Extreme Delegation</strong><span>Offload anything where your value-add is minimal</span></div>
-      <div class="concept-pill"><strong>Always In Flow</strong><span>Spend max time on high-value, energizing work</span></div>
-      <div class="concept-pill"><strong>Adaptability</strong><span>EA keeps you responsive during unexpected disruptions</span></div>
+      <div class="concept-pill"><strong>Engagement Manager (EM)</strong><span>What your EA becomes — a hybrid of skilled EA + executive chief of staff</span></div>
+      <div class="concept-pill"><strong>Massive Leverage</strong><span>The EM's value is not saving time. It's transforming how you lead.</span></div>
+      <div class="concept-pill"><strong>Cognitive Load Reduction</strong><span>EM absorbs low-value work so your brain is free for high-stakes decisions</span></div>
+      <div class="concept-pill"><strong>Legendary Leader Frame</strong><span>The goal: someone others trust, follow, believe in, and support</span></div>
+      <div class="concept-pill"><strong>Extreme Delegation</strong><span>Hand off anything where your value-add is minimal</span></div>
+      <div class="concept-pill"><strong>Adaptability</strong><span>EM keeps you responsive and present even during unexpected disruptions</span></div>
     </div>
 
-    <p class="section-label">EA action plan</p>
+    <p class="section-label">Action plan — turning your EA into an EM</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">1</div>
-          <div class="step-body"><strong>Calendar &amp; time audit</strong><p>EA reviews the past 2 weeks of EM's calendar. Identifies all tasks where EM's value-add is low (scheduling, logistics, admin, travel). Creates a "What EM is doing that EA should own" list.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample audit categories</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Low-leverage tasks to hand off immediately</p>
-              <div class="script-block">• Scheduling and rescheduling meetings
+        <div class="step-top"><div class="step-num">1</div><div class="step-body"><strong>Audit what you're doing that your EA should own <span class="who-badge badge-you">You</span></strong><p>Review your calendar for the past 2 weeks. Every task where your value-add is minimal (scheduling, logistics, follow-ups, travel) moves to your EA immediately. This is the first step toward elevating them to EM.</p></div></div>
+        <details class="sample"><summary>Low-leverage tasks to hand off immediately</summary><div class="sample-body"><div><p class="sample-label">Transfer these from you to your EA starting now</p><div class="script-block">• Scheduling and rescheduling meetings
 • Travel booking and logistics
-• Responding to calendar invites
-• Sending meeting confirmations and reminders
-• Tracking action items from meetings
-• Following up on unanswered emails
-• Sending thank-you or acknowledgment emails
-• Researching contacts before meetings
-• Managing recurring admin tasks (expense reports, etc.)</div>
-            </div>
-          </div>
-        </details>
+• Responding to meeting invites and confirmations
+• Sending follow-up emails after meetings (→ eDrafting, Ch 3)
+• Researching contacts before meetings (→ Prebriefs, Ch 4)
+• Tracking action items and commitments
+• Managing your inbox (→ Inbox Shadowing, Ch 5)
+• Sending thank-you and acknowledgment emails
+• Recurring admin (expense reports, calendar hygiene)</div></div></div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">2</div>
-          <div class="step-body"><strong>Immediate handoff</strong><p>EA takes over scheduling, travel, and calendar management now. EM stops responding to scheduling emails — EA handles all of it. EA sets up a shared task system for quick delegation via voice note or message.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">2</div><div class="step-body"><strong>Shift your mindset: stop managing tasks, start building an EM <span class="who-badge badge-you">You</span></strong><p>An EA who only handles admin stays an EA. To create an EM, you must give them context, judgment, and trust — not just tasks. Start including your EA in the "why" behind decisions, not just the "what."</p></div></div>
+        <details class="sample"><summary>What separates an EA from an EM — from the book</summary><div class="sample-body"><div><p class="sample-label">The EM role definition (Chapter 2)</p><div class="script-block">An Engagement Manager (EM) is a unique role created to help executives unleash massive leverage. Think of them as a hybrid between a highly skilled executive assistant and an executive chief of staff.
+
+An EM's responsibilities include:
+
+1. Owning any item, anywhere, that you can't execute as effectively as possible — from the obvious (scheduling, travel) to the nuanced (preparing you for difficult meetings, coaching follow-up after commitments, managing your inbox).
+
+2. Building meaningful relationships with the most important people in your network — helping you build a trust base of people who will follow you through each step of your career.</div></div></div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">3</div>
-          <div class="step-body"><strong>Weekly delegation review</strong><p>Standing 30-min weekly sync. Agenda: what got done, what's pending, what new tasks can EA absorb this week. Goal: absorb 1–2 new responsibility categories per month.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">3</div><div class="step-body"><strong>Set up a weekly EM sync <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>30-min standing meeting. Agenda: what got done, what's still pending, what new responsibilities your EM can absorb this week. Treat this like a real operating cadence — not a casual check-in.</p></div></div>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">4</div>
-          <div class="step-body"><strong>Define "legendary leader" goals</strong><p>EM writes 3 goals for how they want to show up differently (e.g., fully present in 1:1s, 5 hrs/week on strategy, 24-hr response to every team member). EA's job is to protect EM's time so those goals are achievable.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">4</div><div class="step-body"><strong>Define your "legendary leader" goals <span class="who-badge badge-you">You</span></strong><p>Write 3 specific goals for how you want to show up differently once your EM is fully operational. Your EM's job is to protect your time so these become your default — not your aspiration.</p></div></div>
+        <details class="sample"><summary>Example "legendary leader" goals</summary><div class="sample-body"><div><p class="sample-label">Define these with your EM from day one</p><div class="script-block">• Be fully present in every 1:1 — no phone, no email, full attention
+• Spend at least 5 hours per week on strategy and deep thinking
+• Follow up with every person I meet within 24 hours (→ eDrafting)
+• Reach out to 3 people from my network proactively every week
+• Never miss a commitment I make in a meeting (→ Meeting Debriefs)</div></div></div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">5</div>
-          <div class="step-body"><strong>Remove low-value commitments</strong><p>EA audits recurring meetings EM attends but doesn't drive. Flags any that can be declined, delegated, or shortened. EM approves; EA handles calendar changes and communications.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">5</div><div class="step-body"><strong>Your EM removes low-value calendar commitments <span class="who-badge badge-em">EM</span></strong><p>Your EM audits your recurring meetings and flags any you attend but don't drive. They propose what to decline, delegate, or shorten. You approve — your EM handles all the communications.</p></div></div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════ CHAPTER 3 ═══════════════════ -->
+  <!-- CH 3 -->
   <section id="ch3" class="chapter ch3">
-    <div class="ch-header">
-      <h2>eDrafting</h2>
-      <p>Chapter 3 — Never write another follow-up email again</p>
-    </div>
+    <div class="ch-header"><h2>eDrafting</h2><p>Chapter 3 — Never write another follow-up email again</p></div>
     <p class="section-label">Summary</p>
-    <div class="summary-box">
-      Immediately after any meeting, the EM dictates a 40-second voice note on their phone. The EA uses a 7-part template to turn it into a polished, personalized follow-up email — sent within hours. The dictation uses phone speech-to-text + ChatGPT. Over time, the EA learns your voice and tone. Every person you meet gets a high-quality personal follow-up, making you stand out in any professional network.
-    </div>
+    <div class="summary-box">After every meeting you leave intending to follow up. You almost never do. eDrafting fixes this permanently. <strong>You</strong> dictate a 40-second voice note immediately after the meeting. Your <strong>EM</strong> receives it, runs it through a 7-part template (with ChatGPT if needed), and sends a polished, personalized follow-up email — often within hours, in your voice. Your only job is to talk for 40 seconds. Your EM handles everything else.</div>
 
     <p class="section-label">Core concepts</p>
     <div class="concept-grid">
-      <div class="concept-pill"><strong>40-Second Follow-Up</strong><span>Short voice dictation captured immediately after any meeting</span></div>
-      <div class="concept-pill"><strong>7-Part Email Anatomy</strong><span>Header → Greeting → Positive Impact → Common Ground → Key Takeaways → Future-Pace → Sign-Off</span></div>
-      <div class="concept-pill"><strong>Priority Dictation Label</strong><span>Flags Priority Level, Timestamp, Future Pacing, Sign-Off needs</span></div>
-      <div class="concept-pill"><strong>Dictation System</strong><span>Phone speech-to-text → EA inbox → EA drafts via template + ChatGPT</span></div>
-      <div class="concept-pill"><strong>Specificity is King</strong><span>More specific positive impact &amp; common ground = better email</span></div>
-      <div class="concept-pill"><strong>AI Drafting</strong><span>ChatGPT takes the rough dictation and writes the structured email</span></div>
+      <div class="concept-pill"><strong>eDrafting</strong><span>You dictate, your EM drafts and sends. You never write a follow-up email again.</span></div>
+      <div class="concept-pill"><strong>40-Second Follow-Up</strong><span>A rough voice note right after the meeting — imperfect is fine</span></div>
+      <div class="concept-pill"><strong>7-Part Email Anatomy</strong><span>Header · Greeting · Positive Impact · Common Ground · Key Takeaways · Future-Pace · Sign-Off</span></div>
+      <div class="concept-pill"><strong>Priority Dictation Label</strong><span>Tells your EM: Priority Level, Send Timestamp, Future Pacing Y/N, Sign-Off word</span></div>
+      <div class="concept-pill"><strong>Specificity is King</strong><span>The more specific your Positive Impact and Common Ground, the better the email</span></div>
+      <div class="concept-pill"><strong>AI Drafting</strong><span>Your EM uses ChatGPT to turn rough dictations into polished emails</span></div>
     </div>
 
-    <p class="section-label">EA action plan</p>
+    <p class="section-label">Action plan — implementing eDrafting with your EM</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">1</div>
-          <div class="step-body"><strong>Set up the dictation system</strong><p>EA creates a dedicated email or Slack channel for all dictations. EM installs a voice-to-text app (phone native or Otter.ai). EA gets ChatGPT access for drafting.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">1</div><div class="step-body"><strong>Your EM sets up the dictation pipeline <span class="who-badge badge-em">EM</span></strong><p>Your EM creates a dedicated inbox (email or Slack channel) for all dictations, gets ChatGPT access, and sets you up with a voice-to-text app (phone native or Otter.ai).</p></div></div>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">2</div>
-          <div class="step-body"><strong>Create the 7-part follow-up email template</strong><p>EA builds and maintains a shared Google Doc using the anatomy below. Every follow-up email must hit all 7 parts.</p></div>
-        </div>
-        <details class="sample">
-          <summary>The 7-part email anatomy with examples</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Part I — Header (internal — for EA only, not in the email)</p>
-              <div class="script-block">Who: [Recipient name + phonetic spelling if needed]
+        <div class="step-top"><div class="step-num">2</div><div class="step-body"><strong>Your EM builds the 7-part email template <span class="who-badge badge-em">EM</span></strong><p>Your EM maintains a shared Google Doc with the anatomy below. Every follow-up email must hit all 7 parts — your EM fills in the gaps from your rough dictation.</p></div></div>
+        <details class="sample"><summary>The 7-part email anatomy with examples</summary><div class="sample-body">
+          <div><p class="sample-label">Part I — Header (for your EM only, not in the email)</p><div class="script-block">Who: [Full name — spell phonetically if unusual]
 Priority: High / Normal
-Send by: [Day + time]
-Future pace: [Y/N — does EM want to schedule the next meeting?]
-Sign-off word: "Cheers" / "Best" / "Thanks" — signals end of dictation to EA</div>
-            </div>
-            <div>
-              <p class="sample-label">Part II — Greeting</p>
-              <div class="script-block">"Hey Sachin, it was great to connect. I really enjoyed getting to know you and learning a little more about what you're doing at Catalyst."</div>
-            </div>
-            <div>
-              <p class="sample-label">Part III — Positive Impact (be specific)</p>
-              <div class="script-block">"I don't think I've ever met someone with such a grounded view of the future of AI. Your vision for automated vehicles is truly fascinating."
+Send by: [Day + time, e.g., "today by 5pm"]
+Future pace: Y / N — does your EM need to offer to schedule the next meeting?
+Sign-off word: e.g., "Cheers" — signals to your EM that the dictation is done</div></div>
+          <div><p class="sample-label">Part II — Greeting</p><div class="script-block">"Hey Sachin, it was great to connect. I really enjoyed getting to know you and learning a little more about what you're doing at Catalyst."</div></div>
+          <div><p class="sample-label">Part III — Positive Impact (be specific — not just "great meeting")</p><div class="script-block">"I don't think I've ever met someone with such a grounded view of the future of AI. Your vision for automated vehicles is truly fascinating."
 
-No matter how "bad" a meeting is, there's almost always something positive you can comment on. Even if you disagreed, try: "I really appreciate the way you and I can have an open discussion about these things, even when we disagree. I just want you to know that..."</div>
-            </div>
-            <div>
-              <p class="sample-label">Part IV — Common Ground</p>
-              <div class="script-block">"Beyond that, I'm thrilled to meet another craft beer enthusiast. It's not often I meet someone who seems to have explored more of the Bay's microbreweries than I have. I'm really looking forward to checking out Drake's Brewery in San Leandro. I'll definitely try the Drakonic stout."</div>
-            </div>
-            <div>
-              <p class="sample-label">Part V — Key Takeaways</p>
-              <div class="script-block">"Besides getting to know you better, here's the key next steps as I remember them from our meeting:
-- I offered to send you the link to Paul Graham's maker's vs manager's time article. Becca, do you think you could find and include that down and include the link in the email?
-- He offered to introduce me to his co-founder Eric if he's open to it.
-- If you think I left out any important aspects of the conversation, please let me know."</div>
-            </div>
-            <div>
-              <p class="sample-label">Part VI — Future-Pace</p>
-              <div class="script-block">"Otherwise, I've CC'd Becca to help us find a time to connect sometime next month."</div>
-            </div>
-            <div>
-              <p class="sample-label">Part VII — Sign-Off</p>
-              <div class="script-block">"Cheers,
-Blake"
-
-Note: Always use the same sign-off as a signal to your EA that the email is over.</div>
-            </div>
-          </div>
-        </details>
+Tip: No matter how routine the meeting, there's always something positive. Even for a contentious meeting: "I really appreciate the way you and I can have an open discussion about these things, even when we disagree."</div></div>
+          <div><p class="sample-label">Part IV — Common Ground</p><div class="script-block">"Beyond that, I'm thrilled to meet another craft beer enthusiast. It's not often I meet someone who has explored more of the Bay's microbreweries than I have. I'm really looking forward to checking out Drake's Brewery in San Leandro."</div></div>
+          <div><p class="sample-label">Part V — Key Takeaways</p><div class="script-block">"Here's the key next steps as I remember them:
+- I offered to send you the link to Paul Graham's maker's vs manager's time article. [EM: please find and include this]
+- You offered to introduce me to your co-founder Eric if he's open to it.
+- If you think I left out anything important, please let me know."</div></div>
+          <div><p class="sample-label">Part VI — Future-Pace</p><div class="script-block">"Otherwise, I've CC'd [EM name] to help us find a time to connect sometime next month."</div></div>
+          <div><p class="sample-label">Part VII — Sign-Off (always the same — it's your EM's "stop recording" signal)</p><div class="script-block">"Cheers,
+[Your name]"</div></div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">3</div>
-          <div class="step-body"><strong>Set up the priority label system</strong><p>In each dictation's subject line or tag: Priority (High/Normal), Timestamp (when to send), Future Pace (schedule next meeting? Y/N), Sign-Off signals end of dictation.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample priority dictation label format</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Priority label structure</p>
-              <div class="script-block">Priority Level: [High / Normal]
-  — "High" means your EA should try to send the email before the end of the day.
-  — "Normal" means within 24 hours is fine.
+        <div class="step-top"><div class="step-num">3</div><div class="step-body"><strong>Agree on the priority label system <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>At the top of every dictation, you include a quick priority label so your EM knows exactly how and when to act.</p></div></div>
+        <details class="sample"><summary>Priority label format</summary><div class="sample-body"><div><div class="script-block">Priority Level: [High / Normal]
+  High = send before end of day
+  Normal = within 24 hours is fine
 
-Day/Timestamp: [e.g., "Send today by 5pm" or "Send tomorrow morning"]
+Day/Timestamp: [e.g., "Send today by 5pm" / "Send tomorrow morning"]
 
 Future Pacing: [Y / N]
-  — "Y" means include a line offering to schedule a follow-up meeting.
-  — "N" means no scheduling needed.
+  Y = include a line offering to schedule a next meeting
+  N = no scheduling needed in this email
 
-Sign-Off: [Your standard closing, e.g., "Cheers, Jeff"]
-  — The moment your EA hears your sign-off word, they know the dictation is complete.</div>
-            </div>
-          </div>
-        </details>
+Sign-Off: [Your standard closing word — e.g., "Cheers, Jeff"]
+  The moment your EM hears this, they know the dictation is done</div></div></div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">4</div>
-          <div class="step-body"><strong>EM commits to the habit — the 40-second dictation</strong><p>After every meaningful meeting, dictate immediately — in the car, on a walk, at the elevator. Cover: who you met, what stood out, what was discussed, any follow-up actions. Send to EA; EA handles the rest.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample raw dictation (Use Case #1 from the book)</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">What Blake actually dictated (rough, unpolished)</p>
-              <div class="script-block">"Hi Becca, this is a follow-up email draft request for my meeting today with Sachin Agrawal. That's S-A-C-H-I-N A-G-R-A-W-A-L. Let's say something like:
+        <div class="step-top"><div class="step-num">4</div><div class="step-body"><strong>You commit to the 40-second dictation habit <span class="who-badge badge-you">You</span></strong><p>After every meaningful meeting, pull out your phone and dictate immediately — in the car, on a walk, at the elevator. Rough is fine. Your EM cleans it up. Send to the dictation channel; your EM handles the rest.</p></div></div>
+        <details class="sample"><summary>Real example: Blake's raw dictation → polished email (from the book)</summary><div class="sample-body">
+          <div><p class="sample-label">What Blake actually dictated (~40 seconds, rough and unpolished)</p><div class="script-block">"Hi Becca, this is a follow-up email draft request for my meeting today with Sachin Agrawal. That's S-A-C-H-I-N A-G-R-A-W-A-L. Let's say something like:
 
-Hi Sachin — Uh, Hi Sachin... Thanks for taking the time to connect today. I really enjoyed getting to know you and learning a little more about what you're doing at Catalyst. I don't think I've ever met someone who has explored more of the Bay's microbreweries than I have. Umm... Let's say, uh, I'm really looking forward to checking out Drake's Brewery in San Leandro. I think I'll report back as soon as I have Becca, he recommended one stout in particular. I think it was called the Draconic or something? Could you double check Drake's website for me and mention that I'm looking forward to trying that?
+Hi Sachin — Uh, Hi Sachin... Thanks for taking the time to connect today. I really enjoyed getting to know you and learning a little more about what you're doing at Catalyst. I don't think I've ever met someone who has explored more of the Bay's microbreweries than I have. Umm... I'm really looking forward to checking out Drake's Brewery in San Leandro. I think it was called the Draconic or something? Could you double check Drake's website for me?
 
-Besides getting to know you better, here's the key next steps as I remember them from our meeting. Let's see... I offered to send him the link to the maker's vs manager's time article, so do you think you could find and include that in the email? Also, umm... he offered to introduce me to a friend of his in marketing, Eric.
+Besides getting to know you better, here's the key next steps. I offered to send him the link to the maker's vs manager's time article, so could you find and include that? He offered to introduce me to a friend of his in marketing, Eric.
 
-If you think I left out any important aspects of the conversation, please let me know. Otherwise, I've CC'd Becca to help us find a time to connect next month. Let's also add him to our talent pool. And... I think that's it. So, uh, cheers, Blake. Thanks Becca."</div>
-            </div>
-            <div>
-              <p class="sample-label">The email Becca produced from that dictation (~40 seconds of talking)</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Great meeting you! Here's what's next...</div>
-                <div class="email-body">Hey Sachin,
+If you think I left out anything, please let me know. Otherwise, I've CC'd Becca to help us find a time to connect next month. Let's add him to our talent pool. Cheers, Blake."</div></div>
+          <div><p class="sample-label">The polished email Becca (EM) produced from that dictation</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: Great meeting you! Here's what's next...</div>
+              <div class="email-body">Hey Sachin,
 
 Thanks for taking the time to connect today. I really enjoyed getting to know you and learning a little more about what you're doing at Catalyst. Also, I'm so glad to meet another craft beer enthusiast. It's not often I meet someone who has explored more of the Bay's microbreweries than I have. I'm looking forward to checking out Drake's Brewery in San Leandro. I'll let you know what I think of Drakonic.
 
 In the meantime, here's the next steps as I remember them:
 - I promised to send you the link to the maker's vs manager's time article. You can find it here.
 - You offered to ask Eric if he'd be open to an intro to me. If he is, please feel free to connect us.
-- I think that about covers it. If you think I missed anything, please let me know. Otherwise, I've CC'd Becca to help us find a time to connect sometime next month.
+- If you think I missed anything, please let me know. Otherwise, I've CC'd Becca to help us find a time to connect sometime next month.
 
 Cheers,
 Blake</div>
-              </div>
+              <div class="email-meta">Sent by Becca (EM) — Blake never typed a word</div>
             </div>
           </div>
-        </details>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">5</div>
-          <div class="step-body"><strong>Calibrate the first 5 drafts together</strong><p>EA drafts first 5 emails; EM reviews each. Give specific feedback on tone, warmth, and length. After 5 calibrated drafts, EA sends autonomously.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample email reply (Use Case #2: Letting Go and Looking Back)</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Reconnecting with someone you've lost touch with</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Open to an intro — Darwyn &lt;&gt; Elena</div>
-                <div class="email-body">Hey Darwyn and Elena,
-
-Happy Wednesday! I hope you're both doing well. Since meeting Darwyn at the conference a few years back, she helped build and ultimately sell Caliber. But here's every leg of the startup founder journey and, since it involves Darwyn, I'm exploring acquisition as a possible exit. I think she'd have genuinely intriguing insights to share. Beyond that, she's just a genuinely good person. I think you'll enjoy getting to know her.
-
-I'll leave it in your capable hands. If you're open, feel free to connect directly. If not, no worries — just let me know.
-
-Cheers,
-Blake</div>
-              </div>
-            </div>
-          </div>
-        </details>
-      </div>
-
-      <div class="step">
-        <div class="step-top">
-          <div class="step-num">6</div>
-          <div class="step-body"><strong>Scale to every meeting</strong><p>Goal: every calendar meeting gets a follow-up drafted by EA. EA tracks which meetings have been debriefed and flags any missed. EM's only job: dictate within 30 minutes of the meeting ending.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample AI prompt for EA to use with ChatGPT</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Prompt to give ChatGPT along with the raw dictation</p>
-              <div class="script-block">You are a professional executive assistant helping draft a follow-up email on behalf of my manager. Using the following raw dictation, write a polished, warm, and personalized follow-up email. The email must include:
+        <div class="step-top"><div class="step-num">5</div><div class="step-body"><strong>Calibrate voice and tone — then your EM sends autonomously <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>Your EM drafts the first 5 emails; you review and give specific feedback (tone, warmth, length). After 5 calibrated drafts, your EM sends without your review.</p></div></div>
+        <details class="sample"><summary>ChatGPT prompt your EM uses for drafting</summary><div class="sample-body"><div><div class="script-block">You are a professional executive assistant helping draft a follow-up email on behalf of my manager. Using the raw dictation below, write a polished, warm, and personalized follow-up email using this structure:
 1. A genuine, specific greeting
-2. One clear positive impact statement about the meeting
+2. One clear positive impact statement (be specific — not generic)
 3. Any common ground or shared interests mentioned
 4. A bulleted list of key takeaways or next steps
 5. A future-pacing line about the next meeting (if applicable)
-6. A sign-off of "Cheers, [Name]"
+6. Sign-off: "Cheers, [Name]"
 
-Keep the tone conversational and authentic — not corporate. Here is the dictation: [paste dictation]</div>
-            </div>
-          </div>
-        </details>
+Tone: conversational and authentic — not corporate.
+
+Dictation: [paste here]</div></div></div></details>
       </div>
 
+      <div class="step">
+        <div class="step-top"><div class="step-num">6</div><div class="step-body"><strong>Your EM tracks every meeting that needs a follow-up <span class="who-badge badge-em">EM</span></strong><p>Your EM reviews your calendar daily and flags any meeting without a corresponding dictation. Your only job: dictate within 30 minutes of the meeting ending.</p></div></div>
+      </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ CHAPTER 4 ═══════════════════ -->
+  <!-- CH 4 -->
   <section id="ch4" class="chapter ch4">
-    <div class="ch-header">
-      <h2>Meeting Debriefs</h2>
-      <p>Chapter 4 — How to be the most trustworthy person in anyone's network</p>
-    </div>
+    <div class="ch-header"><h2>Meeting Debriefs</h2><p>Chapter 4 — How to be the most trustworthy person in anyone's network</p></div>
     <p class="section-label">Summary</p>
-    <div class="summary-box">
-      After every meaningful meeting, the EM dictates a structured debrief using the APPA format — Action Items, Professional Challenges, Personal Interests &amp; Passions, About/Facts. The EA converts this into a rich contact profile in a CRM, follows up on action items, and generates a Meeting Prebrief before every future meeting. The EM becomes the most prepared, trustworthy, and memorable person in any room — following through on 100% of commitments and remembering details others forget.
-    </div>
+    <div class="summary-box">After every meaningful meeting, <strong>you</strong> dictate a structured debrief to your <strong>EM</strong> using the APPA format — Action Items, Professional Challenges, Personal Interests &amp; Passions, About/Facts. Your EM converts this into a rich contact profile in a CRM, executes or tracks every action item, and — before every future meeting with that person — generates a <strong>Meeting Prebrief</strong> so you walk in fully prepared. The result: you become the most trustworthy, prepared, and memorable person in any room.</div>
 
     <p class="section-label">Core concepts</p>
     <div class="concept-grid">
       <div class="concept-pill"><strong>APPA Format</strong><span>Action Items · Professional Challenges · Personal Interests &amp; Passions · About/Facts</span></div>
-      <div class="concept-pill"><strong>Meeting Debrief</strong><span>Structured dictation immediately after a meeting; stored in CRM</span></div>
-      <div class="concept-pill"><strong>Meeting Prebrief</strong><span>EA-generated briefing sent to EM before every future meeting</span></div>
-      <div class="concept-pill"><strong>Loop Leverage</strong><span>EA tracks every commitment until it's confirmed closed</span></div>
-      <div class="concept-pill"><strong>Slim Commitments</strong><span>Low-effort actions (send article, make intro) EA can execute independently</span></div>
-      <div class="concept-pill"><strong>True Commitments</strong><span>Higher-stakes promises requiring EM's direct involvement</span></div>
+      <div class="concept-pill"><strong>Meeting Debrief</strong><span>Structured dictation you give your EM right after a meeting</span></div>
+      <div class="concept-pill"><strong>Meeting Prebrief</strong><span>Brief your EM prepares for you before every future meeting with that person</span></div>
+      <div class="concept-pill"><strong>Loop Leverage</strong><span>Your EM tracks every commitment until confirmed closed — by either party</span></div>
+      <div class="concept-pill"><strong>Slim Commitments</strong><span>Low-effort actions your EM executes independently (send article, make intro)</span></div>
+      <div class="concept-pill"><strong>True Commitments</strong><span>Higher-stakes promises only you can fulfill — your EM reminds and preps you</span></div>
     </div>
 
-    <p class="section-label">EA action plan</p>
+    <p class="section-label">Action plan — implementing Meeting Debriefs with your EM</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">1</div>
-          <div class="step-body"><strong>Choose and set up a CRM</strong><p>EA recommends a CRM (Notion, Salesforce, HubSpot, Clay). Creates an APPA contact template: Name, Role, Company, Action Items, Professional Challenges, Personal Interests &amp; Passions, About/Facts. Imports existing contacts from EM's email/calendar.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">1</div><div class="step-body"><strong>Your EM sets up the CRM <span class="who-badge badge-em">EM</span></strong><p>Your EM picks and configures a CRM (Notion, Salesforce, HubSpot, or Clay) with an APPA contact template and imports existing contacts from your email and calendar.</p></div></div>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">2</div>
-          <div class="step-body"><strong>Create the Meeting Debrief dictation template</strong><p>EA creates a 1-page cheat sheet for EM to use on the go. Every debrief follows the APPA structure.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample debrief dictation script (APPA format)</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">What EM says into their phone immediately after the meeting</p>
-              <div class="script-block">"Hey Becca, this is a meeting debrief for [Full Name — spell it out]. That's [spell phonetically]. This is a [Priority Level] meeting debrief.
+        <div class="step-top"><div class="step-num">2</div><div class="step-body"><strong>Your EM creates your debrief dictation cheat sheet <span class="who-badge badge-em">EM</span></strong><p>A simple card or phone note you always have with you — the exact script to follow so you never forget a category.</p></div></div>
+        <details class="sample"><summary>The APPA debrief dictation script</summary><div class="sample-body">
+          <div><p class="sample-label">What you say into your phone right after the meeting</p><div class="script-block">"Hey [EM name], this is a meeting debrief for [Full Name — spell it out]. This is a [Priority Level] debrief.
 
 Action Items:
-— [List every commitment made by you or them]
+— [Every commitment either of you made — be specific]
 
 Professional Challenges:
 — [Career goals, frustrations, things they're working through professionally]
@@ -620,30 +347,22 @@ Personal Interests and Passions:
 — [Hobbies, family, personal projects, things they're excited about outside work]
 
 About/Facts:
-— [Anything miscellaneous that makes them unique or memorable — health, family news, upcoming life events, fun facts]
+— [Anything miscellaneous — health updates, family news, upcoming life events, fun facts]
 
 If I missed or misunderstood anything, please let me know. Otherwise, please add these to their contact record.
 
-Cheers, [Your Name]"</div>
-            </div>
-            <div class="tip-block">Tip: The "About/Facts" section is the most powerful long-term. These are the details that, when you bring them up at the next meeting, make people feel truly seen. "How's your daughter's marathon training going?" — nobody expects that.</div>
-          </div>
-        </details>
+Cheers, [Your name]"</div></div>
+          <div class="tip-block">The "About/Facts" section is the most powerful long-term. When you ask "How's your daughter's marathon training going?" at the next meeting — nobody expects that. It's what makes people feel truly seen, and what separates a good networker from a legendary one.</div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">3</div>
-          <div class="step-body"><strong>EM starts debriefing every meeting</strong><p>Dictate within 10 minutes of every meaningful meeting. EA updates the CRM contact record and sends an acknowledgment confirming the record was saved.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Real example: Sharon Murray Meeting Debrief (from the book)</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Email Becca sent back to Blake after receiving the debrief dictation</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Meeting Debrief! Sharon Murray</div>
-                <div class="email-body">Hi Blake,
+        <div class="step-top"><div class="step-num">3</div><div class="step-body"><strong>You debrief every meaningful meeting <span class="who-badge badge-you">You</span></strong><p>Dictate within 10 minutes of the meeting ending. Your EM updates the CRM and sends back an acknowledgment confirming the record was captured.</p></div></div>
+        <details class="sample"><summary>Real example: Sharon Murray debrief confirmation (from the book)</summary><div class="sample-body">
+          <div><p class="sample-label">Email the EM sent back to confirm the debrief was captured</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: Meeting Debrief! Sharon Murray</div>
+              <div class="email-body">Hi Blake,
 
 This is the meeting debrief information I extracted for your meeting with Sharon Murray:
 
@@ -667,356 +386,239 @@ If you feel I missed or misunderstood anything, please let me know. Otherwise, I
 
 Thanks,
 Becca</div>
-              </div>
+              <div class="email-meta">Becca (EM) extracted all 4 APPA categories from Blake's rough dictation and stored them in the CRM</div>
             </div>
           </div>
-        </details>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">4</div>
-          <div class="step-body"><strong>EA extracts and tracks action items</strong><p>Each debrief → EA categorizes: Handled by EM (creates task + follows up in 48 hrs), Handled by EA (Slim Commitment, executes immediately), or Loop Leverage (recurring reminder until closed). EA sends a weekly "open commitments" digest.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Action item categories explained</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">How EA classifies every action item</p>
-              <div class="script-block">Handled by You (EM):
-— Tasks that only EM can do (e.g., dictating a blog post, making a strategic decision).
-— EA creates a task in the task manager and checks in if not done within 48 hrs.
+        <div class="step-top"><div class="step-num">4</div><div class="step-body"><strong>Your EM extracts and owns all action items <span class="who-badge badge-em">EM</span></strong><p>From every debrief, your EM categorizes action items, executes what they can, and tracks everything else until closed. You receive a weekly open commitments digest.</p></div></div>
+        <details class="sample"><summary>How your EM classifies every action item</summary><div class="sample-body"><div><div class="script-block">Handled by You:
+— Tasks only you can do (dictate a blog post, make a strategic call)
+— Your EM creates the task and follows up if not done within 48 hours
 
-Handled by Your EA:
-— Tasks EA can complete independently (e.g., finding and sending a blog post, drafting an intro email).
-— EA executes immediately upon receiving the debrief.
+Handled by Your EM — Slim Commitments:
+— Tasks your EM can execute independently (find + send an article, draft an intro email)
+— Your EM acts immediately after receiving the debrief — no check-in needed
 
 Loop Leverage:
-— Commitments made to someone else (e.g., "I'll introduce you to Daniel").
-— EA creates a recurring reminder and tracks status until confirmed closed.
-— If the other party hasn't followed through either, EA proactively follows up on your behalf.</div>
-            </div>
-          </div>
-        </details>
+— Commitments either party made to the other (e.g., "I'll introduce you to Daniel")
+— Your EM creates a recurring reminder and follows up on your behalf until confirmed closed
+— If the other party hasn't followed through, your EM proactively nudges them for you</div></div></div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">5</div>
-          <div class="step-body"><strong>Set up Meeting Prebriefs</strong><p>EA sets a calendar trigger: any meeting with a known contact gets a Prebrief 24 hrs before. EM reads it on the way to the meeting — walks in fully prepared.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Full Meeting Prebrief format (from the book)</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Prebrief email subject line</p>
-              <div class="script-block">Subject: Meeting Prebrief | [Name] | [Company]</div>
-            </div>
-            <div>
-              <p class="sample-label">Part I — The Header</p>
-              <div class="script-block">Name: [Link to LinkedIn profile for quick bio]
+        <div class="step-top"><div class="step-num">5</div><div class="step-body"><strong>Your EM sends you a Prebrief before every future meeting <span class="who-badge badge-em">EM</span></strong><p>24 hours before any meeting with a known contact, your EM pulls their full APPA profile and sends you a one-page brief. You read it on the way — you walk in knowing what matters to this person.</p></div></div>
+        <details class="sample"><summary>Full Meeting Prebrief format</summary><div class="sample-body">
+          <div><p class="sample-label">Subject line</p><div class="script-block">Subject: Meeting Prebrief | [Name] | [Company]</div></div>
+          <div><p class="sample-label">Part I — Header</p><div class="script-block">Name: [Link to their LinkedIn for quick bio]
 Role: [Their title]
-Company: [Company name — linked to website]
+Company: [Company — linked to website]
 Meeting Location: [Address + directions, or Zoom link]
 Date/Time: [Day + time]
 
-For in-person calls: include the other party's phone number + who calls whom
-  e.g., "Blake to call Sandra at 3pm" or "Sandra to call Blake at 3pm"
+Call logistics: e.g., "You call Sandra at 3pm" or "Sandra calls you"
 
-Proposed Icebreaker Statement:
-  A short, prepared conversation starter based on APPA info.
-  e.g., "I've heard you've been in Mill Valley long enough to be called a local now,
-  so Ryan's starting a local fund — have you tried calling it Ball Valley Colorado?"</div>
-            </div>
-            <div>
-              <p class="sample-label">Part II — APPA sections (pulled from CRM)</p>
-              <div class="script-block">Action Items (pending):
-  — List any outstanding commitments from either party
+Proposed Icebreaker:
+  A short conversation starter based on their APPA profile.
+  e.g., "Ask about the Half Moon Bay Marathon — Sharon's training for her first one Feb 13th"</div></div>
+          <div><p class="sample-label">Part II — APPA (pulled from CRM)</p><div class="script-block">Action Items (still open):
+  — [Outstanding commitments from either party]
 
 Professional Challenges:
-  — Career goals, frustrations, ambitions they've shared
+  — [Career goals and frustrations they've shared]
 
 Personal Interests &amp; Passions:
-  — Hobbies, family, personal projects — things to ask about
+  — [Hobbies, family details — great for opening small talk]
 
 About/Facts:
-  — The "miscellaneous" category — health, upcoming life events, things that make them unique</div>
-            </div>
-            <div>
-              <p class="sample-label">Part III — Additional context &amp; next steps</p>
-              <div class="script-block">APPA Misc. Info: [Anything EA wants to flag — e.g., "Can you ask them about their product launch?"]
-Next Steps: [What EM should try to accomplish in this meeting]
-Follow-up Reminder: [e.g., "Becca, could you make sure to schedule a follow-up if they commit to an intro?"]</div>
-            </div>
-            <div class="tip-block">The Meeting Prebrief is what makes every meeting feel like a reunion. It takes minutes for your EA to prepare, but the effect is that you walk in knowing what matters to this person — and you never waste the first 5 minutes "remembering" where you left off.</div>
-          </div>
-        </details>
+  — [The miscellaneous details that make them memorable as a person]</div></div>
+          <div><p class="sample-label">Part III — Your EM's flags</p><div class="script-block">Suggested agenda: [What to accomplish in this meeting]
+Follow-up reminder: [e.g., "Confirm intro to Robert Ovens if Sharon brings it up"]</div></div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">6</div>
-          <div class="step-body"><strong>Monthly CRM review</strong><p>EM and EA review the CRM together. Flag stale or incomplete contacts. EA reaches out to schedule re-engagement with lapsed relationships.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">6</div><div class="step-body"><strong>Monthly CRM review <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>Review stale contacts, incomplete APPA records, and lapsed relationships. Your EM drafts re-engagement emails for anyone you haven't connected with in 90+ days.</p></div></div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════ CHAPTER 5 ═══════════════════ -->
+  <!-- CH 5 -->
   <section id="ch5" class="chapter ch5">
-    <div class="ch-header">
-      <h2>Inbox Shadowing</h2>
-      <p>Chapter 5 — How to free yourself from your inbox once and for all</p>
-    </div>
+    <div class="ch-header"><h2>Inbox Shadowing</h2><p>Chapter 5 — How to free yourself from your inbox once and for all</p></div>
     <p class="section-label">Summary</p>
-    <div class="summary-box">
-      Inbox Shadowing means your EA proactively manages your entire inbox. It starts with Triaging (EA labels every email so you only touch what truly needs you), progresses to the EA drafting responses for review, and ultimately reaches full Shadowing where the EA handles most emails autonomously. The EM checks their inbox only 3 times a day. Beyond time savings, Inbox Shadowing enables proactive outreach at scale — thoughtful check-ins and relationship emails you'd never find time to write yourself.
-    </div>
+    <div class="summary-box">Inbox Shadowing means your <strong>EM</strong> proactively manages your entire inbox on your behalf. It builds in four phases: your EM first <strong>Triages</strong> (labels every email), then <strong>drafts responses</strong> for review, then reaches full <strong>Shadowing</strong> where they handle most emails autonomously. You check your inbox only 3 times a day. The deeper value: your EM uses your inbox + CRM to proactively send relationship emails you'd never find time to write — turning your network into a living, breathing asset.</div>
 
     <p class="section-label">Core concepts</p>
     <div class="concept-grid">
-      <div class="concept-pill"><strong>Inbox Triaging</strong><span>EA labels every incoming email before EM sees it</span></div>
-      <div class="concept-pill"><strong>Please Handle</strong><span>EA can respond fully without involving EM</span></div>
-      <div class="concept-pill"><strong>FYI</strong><span>EM should be aware but no action required</span></div>
-      <div class="concept-pill"><strong>Urgent</strong><span>Requires EM's direct attention or decision immediately</span></div>
-      <div class="concept-pill"><strong>Everything Else Folder</strong><span>All triaged emails archived here; EM's inbox stays near-zero</span></div>
-      <div class="concept-pill"><strong>Proactive Outreach</strong><span>EA initiates meaningful touch-points using inbox + CRM context</span></div>
+      <div class="concept-pill"><strong>Inbox Triaging</strong><span>Your EM labels every incoming email before you see it</span></div>
+      <div class="concept-pill"><strong>Please Handle</strong><span>Your EM responds fully — you never see it</span></div>
+      <div class="concept-pill"><strong>FYI</strong><span>You should know this exists, but no response needed from you</span></div>
+      <div class="concept-pill"><strong>Urgent</strong><span>Requires your direct attention — should be rare</span></div>
+      <div class="concept-pill"><strong>Everything Else Folder</strong><span>All triaged email lives here; your inbox stays near-zero</span></div>
+      <div class="concept-pill"><strong>Proactive Outreach</strong><span>Your EM initiates relationship touch-points using inbox + CRM — without you asking</span></div>
     </div>
 
-    <p class="section-label">EA action plan</p>
+    <p class="section-label">Action plan — building Inbox Shadowing with your EM</p>
 
     <p class="phase-label">Phase 1 — Setup (Week 1)</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">1</div>
-          <div class="step-body"><strong>Grant inbox access</strong><p>EM grants EA full inbox access (Google Workspace delegate or Outlook shared mailbox). Agree on a real-time escalation channel (Slack DM or text).</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">1</div><div class="step-body"><strong>Grant your EM full inbox access <span class="who-badge badge-you">You</span></strong><p>Google Workspace delegate access or Outlook shared mailbox. Agree on an escalation channel (Slack DM or text) for anything that truly can't wait.</p></div></div>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">2</div>
-          <div class="step-body"><strong>Create the three labels and folder structure</strong><p>EA creates 3 labels in Gmail (or folders in Outlook): "Please Handle," "FYI," "Urgent" + an "Everything Else" archive folder. Optional: Gmail filters to auto-sort newsletters, notifications, and receipts directly to Everything Else.</p></div>
-        </div>
-        <details class="sample">
-          <summary>What each label means — with examples</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Please Handle — EA responds without EM</p>
-              <div class="script-block">Use when: EA can draft and send a response without EM's direct input.
+        <div class="step-top"><div class="step-num">2</div><div class="step-body"><strong>Your EM creates the label structure <span class="who-badge badge-em">EM</span></strong><p>3 labels in Gmail (or folders in Outlook): "Please Handle," "FYI," "Urgent" + an "Everything Else" archive folder. Optional: Gmail filters to auto-sort newsletters and receipts straight to Everything Else.</p></div></div>
+        <details class="sample"><summary>What each label means — with real examples</summary><div class="sample-body">
+          <div><p class="sample-label">Please Handle — your EM responds, you never see it</p><div class="script-block">Use when: your EM can draft and send a complete response without your input.
 
 Examples:
 — A scheduling request from a former colleague reaching out to catch up
-— An investor asking if you'd be interested in connecting with another portfolio CEO
-— A project status update asking you to confirm you're still aligned
-— Simple yes/no questions where context makes the answer obvious
-— Introduction requests EA can facilitate on your behalf</div>
-            </div>
-            <div>
-              <p class="sample-label">FYI — EM reads but doesn't need to respond</p>
-              <div class="script-block">Use when: EM should know about this, but no action is required right now.
+— An investor asking if you'd be open to connecting with a portfolio CEO
+— A project status update where the answer is obvious from context
+— Introduction requests your EM can facilitate on your behalf
+— Simple yes/no questions where your position is already known</div></div>
+          <div><p class="sample-label">FYI — you read it, no response needed</p><div class="script-block">Use when: you should know about this, but no action is required.
 
 Examples:
-— An email from a new team member introducing themselves
-— A service provider announcing an update or new feature
-— A newsletter or article that's genuinely relevant to EM's work
-— A team member sharing a project status that's already handled</div>
-            </div>
-            <div>
-              <p class="sample-label">Urgent — EM must respond directly</p>
-              <div class="script-block">Use when: The email requires EM's direct opinion, decision, or action.
+— A team member introducing themselves
+— A service provider announcing a new feature
+— A newsletter or article genuinely relevant to your work
+— A project status your team is already handling</div></div>
+          <div><p class="sample-label">Urgent — requires your direct input (should be rare)</p><div class="script-block">Use when: only you can respond. If your EM labels too many Urgent,
+revisit the definition together in your weekly feedback session.
 
 Examples:
-— An email from your CEO asking for your take on a specific decision
-— A legal or compliance matter requiring EM's signature or acknowledgment
-— A sensitive personnel issue that only EM can address
-— A time-critical request that can't be delegated
-
-Note: "Urgent" should be rare. If your EA labels too many emails Urgent,
-revisit the definition together in your weekly feedback session.</div>
-            </div>
-          </div>
-        </details>
+— Your CEO asking for your take on a specific decision
+— A legal or compliance matter requiring your acknowledgment
+— A sensitive personnel issue only you can address</div></div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">3</div>
-          <div class="step-body"><strong>Define "Please Handle" scope</strong><p>EM and EA spend one session defining what EA can handle autonomously. Anything requiring EM's direct opinion → escalate to Urgent or ask EM.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">3</div><div class="step-body"><strong>Define "Please Handle" scope together <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>One focused session: walk through 10–15 real emails from your inbox and classify each one together. This calibration session sets the foundation for everything that follows.</p></div></div>
       </div>
-
     </div>
 
     <p class="phase-label">Phase 2 — Inbox Triaging (Weeks 1–2)</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">4</div>
-          <div class="step-body"><strong>EA triages only — no drafting yet</strong><p>EA labels all incoming email. EM checks inbox 3x/day and corrects any misclassifications. No drafting yet — this phase builds classification accuracy only.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample "Please Handle" email EA receives and acts on</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">Incoming email EM receives</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Re: New app store update is live!</div>
-                <div class="email-body">Hey Ryan,
+        <div class="step-top"><div class="step-num">4</div><div class="step-body"><strong>Your EM triages only — no drafting yet <span class="who-badge badge-em">EM</span></strong><p>Your EM labels every incoming email. You check inbox 3x/day and correct any misclassifications. No drafting yet — this phase is purely about building labeling accuracy.</p></div></div>
+        <details class="sample"><summary>Example: how your EM handles a "Please Handle" email</summary><div class="sample-body">
+          <div><p class="sample-label">Incoming email (project update asking for acknowledgment)</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: Re: New app store update is live!</div>
+              <div class="email-body">Hey Blake,
 
-This is great! Thanks so much for keeping me in the loop. I know a lot of work goes into updates like this, and I just wanted to say thanks for spearheading the project.
+Just wanted to let you know the new version just shipped. Really appreciate you backing this one.
 
-Cheers,
-Blake</div>
-              </div>
+— Ryan</div>
             </div>
-            <div>
-              <p class="sample-label">EA labels it "Please Handle" and drafts this reply autonomously</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Re: New app store update is live!</div>
-                <div class="email-body">Hey Ryan,
-
-This is great! Thanks so much for keeping me in the loop. I know a lot of work goes into updates like this, and I just wanted to say thanks for spearheading the project.
-
-Cheers,
-Blake</div>
-              </div>
-            </div>
-            <div class="tip-block">EA can handle: scheduling, acknowledgments, project status responses, introduction requests, simple yes/no answers. EA escalates: anything that needs EM's actual opinion, anything politically sensitive, anything involving direct reports' performance.</div>
           </div>
-        </details>
+          <div><p class="sample-label">Your EM labels it "Please Handle" and sends this — autonomously</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: Re: New app store update is live!</div>
+              <div class="email-body">Hey Ryan,
+
+This is great! Thanks so much for keeping me in the loop. I know a lot of work goes into updates like this, and I just wanted to say thanks for spearheading the project.
+
+Cheers,
+Blake</div>
+              <div class="email-meta">Sent by your EM — you never saw the original email</div>
+            </div>
+          </div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">5</div>
-          <div class="step-body"><strong>Weekly feedback session</strong><p>Every week: EM reviews 5–10 recent labeling decisions with EA. Explains reasoning when EA got one wrong. Goal: 90%+ labeling accuracy within 2 weeks.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">5</div><div class="step-body"><strong>Weekly feedback session <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>15 minutes every week: review 5–10 recent labeling decisions together. You explain reasoning when your EM got one wrong. Goal: 90%+ labeling accuracy within 2 weeks.</p></div></div>
       </div>
-
     </div>
 
     <p class="phase-label">Phase 3 — Proactive Drafting (Weeks 3–4)</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">6</div>
-          <div class="step-body"><strong>EA drafts basic responses</strong><p>EA begins drafting replies for "Please Handle" emails, placed in Drafts with subject prefix "[DRAFT - Please review]." EM reviews, edits minimally, and sends — or approves for EA to send directly.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample "Please Handle" delegation dictation to EA</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">EM's voice note to EA when they need something specific handled</p>
-              <div class="script-block">"Hey Becca, there's a scheduling update for Beth Luxmore. She's on my calendar for later today. But if I don't cancel it, I'm not going to have a chance to make those updates to our pitch deck. Could you reach out to let her know, and work with her to find another time next week?
+        <div class="step-top"><div class="step-num">6</div><div class="step-body"><strong>Your EM starts drafting responses <span class="who-badge badge-em">EM</span></strong><p>Your EM drafts replies for "Please Handle" emails and places them in Drafts with prefix "[DRAFT - Please review]." You review, edit minimally, and send — or approve for your EM to send directly.</p></div></div>
+        <details class="sample"><summary>How to give your EM a specific handling instruction via voice note</summary><div class="sample-body">
+          <div><p class="sample-label">Voice note you send when you want a specific email handled a specific way</p><div class="script-block">"Hey Becca, there's a scheduling update for Beth Luxmore. She's on my calendar for later today but I need to cancel it — I won't have time to finish the pitch deck updates. Could you reach out to let her know and work with her to find another time next week?
 
-Please also send an email from me to Bella letting her know how sorry I am, and how much I appreciate her patience, and that I'm looking forward to connecting again soon. Thanks!"</div>
-            </div>
-            <div>
-              <p class="sample-label">Three-stage drafting progression</p>
-              <div class="script-block">Stage 1 — Basic drafts (Weeks 3–4):
-  EA drafts response → places in EM Drafts → EM reviews → EM sends
-  Subject prefix: "[DRAFT - Please review]"
+Also send an email from me to Beth letting her know how sorry I am, how much I appreciate her patience, and that I'm looking forward to connecting again soon. Thanks!"</div></div>
+          <div><p class="sample-label">The three-stage drafting progression</p><div class="script-block">Stage 1 — Supervised drafts (Weeks 3–4):
+  Your EM drafts → places in Drafts → you review → you or EM sends
 
 Stage 2 — Autonomous drafts (Week 5+):
-  EA drafts and sends "Please Handle" emails independently
-  EA still flags anything unusual for EM awareness
+  Your EM drafts and sends "Please Handle" independently
+  Flags anything unusual or sensitive for your awareness
 
-Stage 3 — Full Shadowing:
-  EA owns the inbox proactively — not just reacting, but initiating outreach
-  EM checks inbox 3x/day max, handles only Urgent items</div>
-            </div>
-          </div>
-        </details>
+Stage 3 — Full Inbox Shadowing:
+  Your EM proactively manages the inbox and initiates outreach
+  You check 3x/day max and only handle Urgent items yourself</div></div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">7</div>
-          <div class="step-body"><strong>EM checks inbox 3x/day only</strong><p>Morning (8–9am), midday (12–1pm), end of day (5–6pm). All other time: inbox is EA's domain. Urgent Slack/text channel for anything that truly can't wait.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">7</div><div class="step-body"><strong>You commit to 3x/day inbox checks only <span class="who-badge badge-you">You</span></strong><p>Morning (8–9am), midday (12–1pm), end of day (5–6pm). All other time: inbox belongs to your EM. Urgent escalation channel (Slack/text) for anything that truly can't wait.</p></div></div>
       </div>
-
     </div>
 
     <p class="phase-label">Phase 4 — Full Inbox Shadowing (Week 5+)</p>
     <div class="steps">
-
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">8</div>
-          <div class="step-body"><strong>EA sends autonomously</strong><p>EA sends "Please Handle" emails without EM's review. Complex emails go to Drafts for EM's 3x/day review. EM's inbox sessions drop from 30+ minutes to under 10 minutes.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">8</div><div class="step-body"><strong>Your EM sends "Please Handle" autonomously <span class="who-badge badge-em">EM</span></strong><p>No more Drafts review for routine emails. Your EM owns that category completely. Your inbox sessions drop from 30+ minutes to under 10 minutes per session.</p></div></div>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">9</div>
-          <div class="step-body"><strong>Enable proactive outreach</strong><p>EA uses inbox context + Meeting Debrief CRM to initiate meaningful touch-points on EM's behalf — without EM having to prompt it.</p></div>
-        </div>
-        <details class="sample">
-          <summary>Sample proactive outreach emails EA can send autonomously</summary>
-          <div class="sample-body">
-            <div>
-              <p class="sample-label">EA following up on a personal detail from the CRM (About/Facts)</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Following up on Stephen Thorne</div>
-                <div class="email-body">Hey Stephen,
+        <div class="step-top"><div class="step-num">9</div><div class="step-body"><strong>Your EM initiates proactive relationship outreach <span class="who-badge badge-em">EM</span></strong><p>Using your inbox + CRM, your EM sends thoughtful check-ins and follow-ups on your behalf — without you ever prompting it. This is the compounding superpower of a fully operational EM.</p></div></div>
+        <details class="sample"><summary>Real examples of proactive outreach your EM sends without being asked</summary><div class="sample-body">
+          <div><p class="sample-label">Following up on a dropped commitment (caught via Loop Leverage)</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: Following up on Stephen Thorne intro</div>
+              <div class="email-body">Hey [Contact],
 
-Just wanted to follow up on that intro to Stephen Thorne. I know things have been crazy on your end but, it's still a possibility, that connection would really mean a lot. Super excited to meet him!
+Just wanted to follow up on that intro to Stephen Thorne. I know things have been crazy on your end but it's still a possibility — that connection would really mean a lot.
 
 Are you still able to facilitate that?
 
 Thanks!</div>
-                <div class="email-meta">Sent by Becca on Blake's behalf — no input from Blake needed</div>
-              </div>
+              <div class="email-meta">Your EM sent this — you made the ask 3 weeks ago and it fell through the cracks. Your EM caught it via Loop Leverage.</div>
             </div>
-            <div>
-              <p class="sample-label">EA following up after a cancelled meeting</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: Re: (5) Canceling today's meeting</div>
-                <div class="email-body">Hi John,
+          </div>
+          <div><p class="sample-label">Empathy follow-up after a cancelled meeting</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: Re: Canceling today's meeting</div>
+              <div class="email-body">Hi John,
 
 Not a problem at all, of course. There's nothing scarier than when your child's sick and isn't getting better. In your shoes, I'd absolutely do the same. Take all the time you need. I hope he feels better soon and that you and Sam stay healthy.
 
-I've CC'd Becca to help us find a time when things settle down (but no rush). Good luck to you and your little guy!
+I've CC'd Becca to help us find a time when things settle down — but no rush. Good luck to you and your little guy!
 
 Best,
 Blake</div>
-                <div class="email-meta">EA drafted and sent this — Blake never saw the original email. EA found the opportunity to show empathy.</div>
-              </div>
-            </div>
-            <div>
-              <p class="sample-label">EA proactive family check-in (from CRM personal details)</p>
-              <div class="email-block">
-                <div class="email-subject">Subject: How's the family?</div>
-                <div class="email-body">Hey John,
-
-I just wanted to check in on you and your son. Is he on the mend, and have you stayed healthy?
-
-I'm looking forward to reconnecting when your calendar allows, of course, but no rush. Would love a quick update one way or the other.
-
-Best,
-Blake</div>
-                <div class="email-meta">Sent a week after the cancellation — EA proactively checked the CRM for the follow-up date and sent this without prompting.</div>
-              </div>
+              <div class="email-meta">Your EM drafted and sent this. You never saw the original cancellation email.</div>
             </div>
           </div>
-        </details>
+          <div><p class="sample-label">Proactive check-in one week later (EM scheduled this from the CRM)</p>
+            <div class="email-block">
+              <div class="email-subject">Subject: How's the family?</div>
+              <div class="email-body">Hey John,
+
+Just wanted to check in on you and your son. Is he on the mend, and have you stayed healthy?
+
+Looking forward to reconnecting when your calendar allows — no rush. Would love a quick update either way.
+
+Best,
+Blake</div>
+              <div class="email-meta">Sent by your EM one week after the cancellation — without any prompting from you.</div>
+            </div>
+          </div>
+        </div></details>
       </div>
 
       <div class="step">
-        <div class="step-top">
-          <div class="step-num">10</div>
-          <div class="step-body"><strong>Monthly inbox health review</strong><p>Is labeling still accurate? Are Urgent escalations appropriate — not too many (EA under-handling) or too few (things slipping)? Adjust scope of "Please Handle" as EA's context grows.</p></div>
-        </div>
+        <div class="step-top"><div class="step-num">10</div><div class="step-body"><strong>Monthly inbox health review <span class="who-badge badge-you">You</span> + <span class="who-badge badge-em">EM</span></strong><p>Are labels accurate? Is the Urgent volume right — not too many (EM under-handling) or too few (things slipping)? Expand your EM's "Please Handle" scope as their judgment and context grow.</p></div></div>
       </div>
-
     </div>
   </section>
 
@@ -1031,6 +633,5 @@ function showChapter(id, btn) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
-
 </body>
 </html>
